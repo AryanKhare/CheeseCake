@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+#container {
+    margin: 30px auto;
+    width: 97%;
+}
+
+/* mobile first design */
+@media screen and (min-width: 375px) {
+    .heading {
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .heading .heading--title {
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 32px;
+    }
+
+    .heading--content {
+        margin: 15px auto;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .heading--content p {
+        margin-top: -3px;
+        width: 95%;
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 0.9rem;
+        line-height: 16px;
+    }
+
+    .cheesecake--photo img{
+        width: 100%;
+    }
+
+    .info--card {
+        margin: 25px auto;
+        padding: 5px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .break--line {
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info.orange {
+        width: 100%;
+        color: #F2994A;
+    }
+
+    .info {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .card--content {
+        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card--content .card--content--title {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 8px;
+        line-height: 10px;
+        text-transform: uppercase;
+
+        color: #BDBDBD;
+    }
+
+    .card--content .card--content--value {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .ingredients {
+        width: 100%;
+    }
+
+    .ingredients .ingredients--heading {
+        color: #333333;
+        font-family: 'Playfair Display';
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
+
+    .ingredients-catageory{
+        margin: 20px auto;
+        width: 100%;
+    }
+
+    .ingredient--catageory--title {
+        font-family: 'Playfair Display';
+        font-size: 1.2rem;
+        font-style: italic;
+        font-weight: 500;
+        line-height: 20px;
+
+        color: #333333;
+        margin-bottom: 20px;
+    }
+
+    .item {
+        width: 100%;
+        margin: 10px auto;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .ingredients .item {
+        align-items: center;
+    }
+
+    input[type="checkbox"] {
+        width: 21px;
+        height: 21px;
+
+        width: 5%;
+        appearance: none;
+        border: 1px solid black;
+        border-radius: 4px;
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    input[type="checkbox"]:after {
+        content: '\f00c';
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        color: #FAFAFA;
+        display: none;
+    }
+
+    input[type="checkbox"]:checked {
+        background-color: #F2994A;
+    }
+
+    input[type="checkbox"]:checked::after {
+        display: block;
+    }
+
+    .item p {
+        width: 90%;
+        margin-left: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-size: 0.95rem;
+        font-weight: 400;
+        line-height: 25px;
+
+        color: #333333;
+    }
+
+    .instructions {
+        margin: 10px auto;
+        width: 100%;
+    }
+
+    .instruction--title {
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 32px;
+
+        color: #333333;
+    }
+
+    .item .num--box {
+        width: 36px;
+        height: 36px;
+        background-color: #F2994A;
+        border-radius: 6px;
+        color: white;
+        text-align: center;
+
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .instructions .item label {
+        width: 80%;
+        margin-left: 10px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+
+        color: #333333;
+    }
+
+    .source {
+        font-family: 'Montserrat';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+
+        margin: 30px auto;
+        color: #BDBDBD;
+    }
+
+    footer {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #828282;
+        position: absolute;
+        text-align: center;
+        margin-top: 100px;
+
+        width: 98.5%;
+        height: 30px; 
+    }
+}
+
+@media (min-width: 1020px) {
+    #container {
+        width: 70%;
+    }
+
+    .heading .heading--title {
+        /* border: 1px solid black; */
+        font-size: 3rem;
+        font-weight: 800;
+        line-height: 64px;
+    }
+
+    .heading--content {
+        justify-content: flex-start;
+    }
+
+    .heading--content p {
+        width: 60%;
+        margin-left: 10px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 17px;
+
+        color: #4f4f4f;
+    }
+
+    .info--card {
+        /* border: 1px solid black; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 14%;
+        position: absolute;
+        right: 210px;
+        border-radius: 12px;
+        background-color: #fff;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);        
+    }
+
+    .break--line {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* gap: 40px; */
+    }
+
+    .info {
+        width: 100%;
+        justify-content: center;
+        /* border: 1px solid black; */
+        margin: 30px auto;
+    }
+
+    .card--content .card--content--title {
+        font-size: 0.7rem;
+        line-height: 12px;
+    }
+
+    .card--content .card--content--value {
+        font-size: 0.9rem;
+        line-height: 18px;
+    }
+
+    .ingredients {
+        margin: 30px auto;
+        width: 100%;
+        left: 0;
+        
+    }
+
+    .ingredients .ingredients--heading {
+        font-size: 1.5rem;
+    }
+
+    .ingredients-catageory {
+        margin: 30px auto;
+    }
+
+    .item {
+        width: 55%;
+        margin-left: 0;
+    }
+
+    input[type="checkbox"] {
+        width: 30px;
+        height: 30px;
+    }
+
+    .instructions {
+        margin: 30px auto;
+    }
+
+    .instruction--title {
+        margin: 30px auto;
+    }
+
+    footer {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 30px;
+        
+    }
+}
